@@ -1,0 +1,13 @@
+PASS: hashes and patch boundaries; 80 arithmetic cases; 253 invalid frame IDs; 12 advertised modes; 3 ROI writer sequences; 3 deferred apply paths; 3 GET_CUR roundtrips.
+{'frame': 1, 'requested_interval': 333333, 'width': 1280, 'height': 960, 'negotiated_interval': 1333333, 'pixel_clock': 12251250, 'steps': 3592, 'uvc_apply_pending': 1}
+{'frame': 1, 'requested_interval': 400000, 'width': 1280, 'height': 960, 'negotiated_interval': 1333333, 'pixel_clock': 12251250, 'steps': 3592, 'uvc_apply_pending': 1}
+{'frame': 1, 'requested_interval': 666667, 'width': 1280, 'height': 960, 'negotiated_interval': 1333333, 'pixel_clock': 12251250, 'steps': 3592, 'uvc_apply_pending': 1}
+{'frame': 1, 'requested_interval': 1000000, 'width': 1280, 'height': 960, 'negotiated_interval': 1333333, 'pixel_clock': 12251250, 'steps': 3592, 'uvc_apply_pending': 1}
+{'frame': 2, 'requested_interval': 166667, 'width': 720, 'height': 480, 'negotiated_interval': 666667, 'pixel_clock': 12538350, 'steps': 3605, 'uvc_apply_pending': 1}
+{'frame': 2, 'requested_interval': 333333, 'width': 720, 'height': 480, 'negotiated_interval': 666667, 'pixel_clock': 12538350, 'steps': 3605, 'uvc_apply_pending': 1}
+{'frame': 2, 'requested_interval': 400000, 'width': 720, 'height': 480, 'negotiated_interval': 666667, 'pixel_clock': 12538350, 'steps': 3605, 'uvc_apply_pending': 1}
+{'frame': 2, 'requested_interval': 666667, 'width': 720, 'height': 480, 'negotiated_interval': 666667, 'pixel_clock': 12538350, 'steps': 2553, 'uvc_apply_pending': 1}
+{'frame': 4, 'requested_interval': 166667, 'width': 640, 'height': 480, 'negotiated_interval': 272473, 'pixel_clock': 30883050, 'steps': 3633, 'uvc_apply_pending': 1}
+{'frame': 4, 'requested_interval': 333333, 'width': 640, 'height': 480, 'negotiated_interval': 333333, 'pixel_clock': 25245000, 'steps': 2759, 'uvc_apply_pending': 1}
+{'frame': 4, 'requested_interval': 400000, 'width': 640, 'height': 480, 'negotiated_interval': 272473, 'pixel_clock': 30883050, 'steps': 3491, 'uvc_apply_pending': 1}
+{'frame': 4, 'requested_interval': 666667, 'width': 640, 'height': 480, 'negotiated_interval': 666667, 'pixel_clock': 12538350, 'steps': 3263, 'uvc_apply_pending': 1}

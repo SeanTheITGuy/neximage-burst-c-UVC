@@ -1,0 +1,32 @@
+[
+  {
+    "frame": 1,
+    "requested_interval": 666667,
+    "width": 14425,
+    "height": 12336,
+    "negotiated_interval": 1333333,
+    "pixel_clock": 153029250,
+    "steps": 3630,
+    "uvc_apply_pending": 1
+  },
+  {
+    "frame": 2,
+    "requested_interval": 666667,
+    "width": 29083,
+    "height": 264,
+    "negotiated_interval": 666667,
+    "pixel_clock": 7227990,
+    "steps": 2590,
+    "uvc_apply_pending": 1
+  },
+  {
+    "frame": 4,
+    "requested_interval": 666667,
+    "width": 32274,
+    "height": 36836,
+    "negotiated_interval": 666667,
+    "pixel_clock": 154141509,
+    "steps": 3279,
+    "uvc_apply_pending": 1
+  }
+]

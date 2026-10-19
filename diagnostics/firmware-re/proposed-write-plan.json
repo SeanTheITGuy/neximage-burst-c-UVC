@@ -1,0 +1,30 @@
+{
+  "status": "APPROVED AND EXECUTED; full verification passed twice; see roi-write-result.json",
+  "notes": "Page-bounded transactions, max 32 data bytes. Full-image verification before any write and after all writes is required. Completion reads may be empty; full readback is authoritative. Rollback restores before bytes in these exact ranges.",
+  "transactions": [
+    {
+      "offset": "0x18f7",
+      "count": 9,
+      "before": "90 32 c9 e4 93 fb 74 01 93",
+      "after": "78 96 e6 b4 01 02 80 09 b4"
+    },
+    {
+      "offset": "0x1900",
+      "count": 32,
+      "before": "fa 74 02 93 8b 6a 8a 6b f5 6c e5 6d 75 f0 2a a4 ab 6a 25 6c f9 e5 6b 35 f0 fa 90 ff dc 12 0f f6",
+      "after": "02 02 80 04 b4 04 37 14 75 f0 03 a4 24 c9 f5 82 e5 f0 34 32 f5 83 a3 e4 93 fa a3 e4 93 f5 82 8a"
+    },
+    {
+      "offset": "0x1920",
+      "count": 32,
+      "before": "fe 90 ff db 12 0f f6 fd ee 78 81 f6 ed 08 f6 90 ff de 12 0f f6 fe 90 ff dd 12 0f f6 fd ee 78 9d",
+      "after": "83 74 05 93 ff 74 06 93 78 81 f6 08 a6 07 74 07 93 ff 74 08 93 78 9d f6 08 a6 07 02 19 40 c2 c6"
+    },
+    {
+      "offset": "0x1940",
+      "count": 4,
+      "before": "f6 ed 08 f6",
+      "after": "22 00 00 00"
+    }
+  ]
+}

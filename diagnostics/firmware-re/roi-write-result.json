@@ -1,0 +1,43 @@
+{
+  "status": "APPLIED AND VERIFIED: cold reconnect, three resolutions and repeated stream startup passed with stock V4L2 and no sensor helper",
+  "serial": "28414934",
+  "base_sha256": "a2fe7b95f855dabe6451c1c378ea238763b089f493f97800271c5c856582319c",
+  "candidate_sha256": "e18911b387db7ca7975535facc8d0c5898decf94cb64e5c694611abb8895d7d6",
+  "transactions": [
+    {
+      "address": "0x18f7",
+      "length": 9,
+      "status": "SENT",
+      "out_count": 11,
+      "completion_length": 1
+    },
+    {
+      "address": "0x1900",
+      "length": 32,
+      "status": "SENT",
+      "out_count": 34,
+      "completion_length": 0
+    },
+    {
+      "address": "0x1920",
+      "length": 32,
+      "status": "SENT",
+      "out_count": 34,
+      "completion_length": 0
+    },
+    {
+      "address": "0x1940",
+      "length": 4,
+      "status": "SENT",
+      "out_count": 6,
+      "completion_length": 0
+    }
+  ],
+  "full_read_verifications": 2,
+  "changed_byte_count": 76,
+  "existing_descriptor_corrections": {
+    "0x1f0c": "02",
+    "0x1f34": "4f"
+  },
+  "hardware_validation": "validation-cold1/results.json"
+}

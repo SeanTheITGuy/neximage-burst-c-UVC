@@ -1,0 +1,445 @@
+{
+  "date": "2026-10-19",
+  "serial": "28414934",
+  "images": [
+    {
+      "file": "neximage-eeprom-original.bin",
+      "sha256": "743c32526036dd6600ee0e40596eea8df8264af6f0b3bdf4adfaec33bf4f6dc9",
+      "length": 32768,
+      "changed_bytes_from_original": 0,
+      "changes_from_original": []
+    },
+    {
+      "file": "neximage-eeprom-after-attempt.bin",
+      "sha256": "cdf65664e3cad5640b9923dfa370e1ab9fc100b4ed6ed908587daddd2bb2584a",
+      "length": 32768,
+      "changed_bytes_from_original": 1,
+      "changes_from_original": [
+        {
+          "eeprom_offset": "0x1F34",
+          "before": "33",
+          "after": "4F"
+        }
+      ]
+    },
+    {
+      "file": "neximage-eeprom-format-index-experimental.bin",
+      "sha256": "a2fe7b95f855dabe6451c1c378ea238763b089f493f97800271c5c856582319c",
+      "length": 32768,
+      "changed_bytes_from_original": 2,
+      "changes_from_original": [
+        {
+          "eeprom_offset": "0x1F0C",
+          "before": "01",
+          "after": "02"
+        },
+        {
+          "eeprom_offset": "0x1F34",
+          "before": "33",
+          "after": "4F"
+        }
+      ]
+    },
+    {
+      "file": "neximage-eeprom-working-uvc-autoinit.bin",
+      "sha256": "e18911b387db7ca7975535facc8d0c5898decf94cb64e5c694611abb8895d7d6",
+      "length": 32768,
+      "changed_bytes_from_original": 78,
+      "changes_from_original": [
+        {
+          "eeprom_offset": "0x18F7",
+          "before": "90",
+          "after": "78"
+        },
+        {
+          "eeprom_offset": "0x18F8",
+          "before": "32",
+          "after": "96"
+        },
+        {
+          "eeprom_offset": "0x18F9",
+          "before": "C9",
+          "after": "E6"
+        },
+        {
+          "eeprom_offset": "0x18FA",
+          "before": "E4",
+          "after": "B4"
+        },
+        {
+          "eeprom_offset": "0x18FB",
+          "before": "93",
+          "after": "01"
+        },
+        {
+          "eeprom_offset": "0x18FC",
+          "before": "FB",
+          "after": "02"
+        },
+        {
+          "eeprom_offset": "0x18FD",
+          "before": "74",
+          "after": "80"
+        },
+        {
+          "eeprom_offset": "0x18FE",
+          "before": "01",
+          "after": "09"
+        },
+        {
+          "eeprom_offset": "0x18FF",
+          "before": "93",
+          "after": "B4"
+        },
+        {
+          "eeprom_offset": "0x1900",
+          "before": "FA",
+          "after": "02"
+        },
+        {
+          "eeprom_offset": "0x1901",
+          "before": "74",
+          "after": "02"
+        },
+        {
+          "eeprom_offset": "0x1902",
+          "before": "02",
+          "after": "80"
+        },
+        {
+          "eeprom_offset": "0x1903",
+          "before": "93",
+          "after": "04"
+        },
+        {
+          "eeprom_offset": "0x1904",
+          "before": "8B",
+          "after": "B4"
+        },
+        {
+          "eeprom_offset": "0x1905",
+          "before": "6A",
+          "after": "04"
+        },
+        {
+          "eeprom_offset": "0x1906",
+          "before": "8A",
+          "after": "37"
+        },
+        {
+          "eeprom_offset": "0x1907",
+          "before": "6B",
+          "after": "14"
+        },
+        {
+          "eeprom_offset": "0x1908",
+          "before": "F5",
+          "after": "75"
+        },
+        {
+          "eeprom_offset": "0x1909",
+          "before": "6C",
+          "after": "F0"
+        },
+        {
+          "eeprom_offset": "0x190A",
+          "before": "E5",
+          "after": "03"
+        },
+        {
+          "eeprom_offset": "0x190B",
+          "before": "6D",
+          "after": "A4"
+        },
+        {
+          "eeprom_offset": "0x190C",
+          "before": "75",
+          "after": "24"
+        },
+        {
+          "eeprom_offset": "0x190D",
+          "before": "F0",
+          "after": "C9"
+        },
+        {
+          "eeprom_offset": "0x190E",
+          "before": "2A",
+          "after": "F5"
+        },
+        {
+          "eeprom_offset": "0x190F",
+          "before": "A4",
+          "after": "82"
+        },
+        {
+          "eeprom_offset": "0x1910",
+          "before": "AB",
+          "after": "E5"
+        },
+        {
+          "eeprom_offset": "0x1911",
+          "before": "6A",
+          "after": "F0"
+        },
+        {
+          "eeprom_offset": "0x1912",
+          "before": "25",
+          "after": "34"
+        },
+        {
+          "eeprom_offset": "0x1913",
+          "before": "6C",
+          "after": "32"
+        },
+        {
+          "eeprom_offset": "0x1914",
+          "before": "F9",
+          "after": "F5"
+        },
+        {
+          "eeprom_offset": "0x1915",
+          "before": "E5",
+          "after": "83"
+        },
+        {
+          "eeprom_offset": "0x1916",
+          "before": "6B",
+          "after": "A3"
+        },
+        {
+          "eeprom_offset": "0x1917",
+          "before": "35",
+          "after": "E4"
+        },
+        {
+          "eeprom_offset": "0x1918",
+          "before": "F0",
+          "after": "93"
+        },
+        {
+          "eeprom_offset": "0x191A",
+          "before": "90",
+          "after": "A3"
+        },
+        {
+          "eeprom_offset": "0x191B",
+          "before": "FF",
+          "after": "E4"
+        },
+        {
+          "eeprom_offset": "0x191C",
+          "before": "DC",
+          "after": "93"
+        },
+        {
+          "eeprom_offset": "0x191D",
+          "before": "12",
+          "after": "F5"
+        },
+        {
+          "eeprom_offset": "0x191E",
+          "before": "0F",
+          "after": "82"
+        },
+        {
+          "eeprom_offset": "0x191F",
+          "before": "F6",
+          "after": "8A"
+        },
+        {
+          "eeprom_offset": "0x1920",
+          "before": "FE",
+          "after": "83"
+        },
+        {
+          "eeprom_offset": "0x1921",
+          "before": "90",
+          "after": "74"
+        },
+        {
+          "eeprom_offset": "0x1922",
+          "before": "FF",
+          "after": "05"
+        },
+        {
+          "eeprom_offset": "0x1923",
+          "before": "DB",
+          "after": "93"
+        },
+        {
+          "eeprom_offset": "0x1924",
+          "before": "12",
+          "after": "FF"
+        },
+        {
+          "eeprom_offset": "0x1925",
+          "before": "0F",
+          "after": "74"
+        },
+        {
+          "eeprom_offset": "0x1926",
+          "before": "F6",
+          "after": "06"
+        },
+        {
+          "eeprom_offset": "0x1927",
+          "before": "FD",
+          "after": "93"
+        },
+        {
+          "eeprom_offset": "0x1928",
+          "before": "EE",
+          "after": "78"
+        },
+        {
+          "eeprom_offset": "0x1929",
+          "before": "78",
+          "after": "81"
+        },
+        {
+          "eeprom_offset": "0x192A",
+          "before": "81",
+          "after": "F6"
+        },
+        {
+          "eeprom_offset": "0x192B",
+          "before": "F6",
+          "after": "08"
+        },
+        {
+          "eeprom_offset": "0x192C",
+          "before": "ED",
+          "after": "A6"
+        },
+        {
+          "eeprom_offset": "0x192D",
+          "before": "08",
+          "after": "07"
+        },
+        {
+          "eeprom_offset": "0x192E",
+          "before": "F6",
+          "after": "74"
+        },
+        {
+          "eeprom_offset": "0x192F",
+          "before": "90",
+          "after": "07"
+        },
+        {
+          "eeprom_offset": "0x1930",
+          "before": "FF",
+          "after": "93"
+        },
+        {
+          "eeprom_offset": "0x1931",
+          "before": "DE",
+          "after": "FF"
+        },
+        {
+          "eeprom_offset": "0x1932",
+          "before": "12",
+          "after": "74"
+        },
+        {
+          "eeprom_offset": "0x1933",
+          "before": "0F",
+          "after": "08"
+        },
+        {
+          "eeprom_offset": "0x1934",
+          "before": "F6",
+          "after": "93"
+        },
+        {
+          "eeprom_offset": "0x1935",
+          "before": "FE",
+          "after": "78"
+        },
+        {
+          "eeprom_offset": "0x1936",
+          "before": "90",
+          "after": "9D"
+        },
+        {
+          "eeprom_offset": "0x1937",
+          "before": "FF",
+          "after": "F6"
+        },
+        {
+          "eeprom_offset": "0x1938",
+          "before": "DD",
+          "after": "08"
+        },
+        {
+          "eeprom_offset": "0x1939",
+          "before": "12",
+          "after": "A6"
+        },
+        {
+          "eeprom_offset": "0x193A",
+          "before": "0F",
+          "after": "07"
+        },
+        {
+          "eeprom_offset": "0x193B",
+          "before": "F6",
+          "after": "02"
+        },
+        {
+          "eeprom_offset": "0x193C",
+          "before": "FD",
+          "after": "19"
+        },
+        {
+          "eeprom_offset": "0x193D",
+          "before": "EE",
+          "after": "40"
+        },
+        {
+          "eeprom_offset": "0x193E",
+          "before": "78",
+          "after": "C2"
+        },
+        {
+          "eeprom_offset": "0x193F",
+          "before": "9D",
+          "after": "C6"
+        },
+        {
+          "eeprom_offset": "0x1940",
+          "before": "F6",
+          "after": "22"
+        },
+        {
+          "eeprom_offset": "0x1941",
+          "before": "ED",
+          "after": "00"
+        },
+        {
+          "eeprom_offset": "0x1942",
+          "before": "08",
+          "after": "00"
+        },
+        {
+          "eeprom_offset": "0x1943",
+          "before": "F6",
+          "after": "00"
+        },
+        {
+          "eeprom_offset": "0x1F0C",
+          "before": "01",
+          "after": "02"
+        },
+        {
+          "eeprom_offset": "0x1F34",
+          "before": "33",
+          "after": "4F"
+        }
+      ]
+    }
+  ],
+  "final_matches_both_actual_postwrite_readbacks": true,
+  "final_validation": "diagnostics/firmware-re/validation-cold1/results.json",
+  "status": "Valid stock V4L2 captures at all three sizes and stream restart; no helper or kernel modification required"
+}

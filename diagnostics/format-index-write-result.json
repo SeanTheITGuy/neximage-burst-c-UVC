@@ -1,0 +1,12 @@
+{
+  "serial": "28414934",
+  "address": "0x1f0c",
+  "before": "01",
+  "after": "02",
+  "before_sha256": "cdf65664e3cad5640b9923dfa370e1ab9fc100b4ed6ed908587daddd2bb2584a",
+  "after_sha256": "a2fe7b95f855dabe6451c1c378ea238763b089f493f97800271c5c856582319c",
+  "full_read_verifications": 2,
+  "configuration_length_byte": "4f",
+  "completion_response": "zero-length completion read; programming nevertheless succeeded, verified twice",
+  "status": "APPLIED AND VERIFIED; post-reconnect V4L2 capture validation passed at 720x480 and 1280x960 using volatile ROI/clock initialization."
+}

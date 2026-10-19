@@ -1,0 +1,78 @@
+Verified backups: exactly one difference, 0x1f34: 33 -> 4f
+{
+  "streaming_header": {
+    "length": 15,
+    "formats": 3,
+    "total_length": 169,
+    "control_size": 2,
+    "required_length": 19
+  },
+  "actual_cs_total": 203,
+  "formats": [
+    {
+      "index": 1,
+      "declared_frames": 4,
+      "guid": "4752424700001000800000aa00389b71",
+      "bits_per_pixel": 8,
+      "variable_size": 0,
+      "frames": []
+    },
+    {
+      "index": 1,
+      "declared_frames": 4,
+      "guid": "5938303000001000800000aa00389b71",
+      "bits_per_pixel": 8,
+      "variable_size": 0,
+      "frames": [
+        {
+          "index": 1,
+          "width": 1280,
+          "height": 960,
+          "min_bitrate": 4294950912,
+          "max_bitrate": 4294934528,
+          "default_interval": 333333,
+          "stride": 1280,
+          "intervals": [
+            333333,
+            400000,
+            666667,
+            1000000
+          ],
+          "expected_bytes": 1228800
+        },
+        {
+          "index": 2,
+          "width": 720,
+          "height": 480,
+          "min_bitrate": 6656,
+          "max_bitrate": 26624,
+          "default_interval": 333333,
+          "stride": 720,
+          "intervals": [
+            166667,
+            333333,
+            400000,
+            666667
+          ],
+          "expected_bytes": 345600
+        },
+        {
+          "index": 4,
+          "width": 640,
+          "height": 480,
+          "min_bitrate": 307200,
+          "max_bitrate": 9216000,
+          "default_interval": 333333,
+          "stride": 640,
+          "intervals": [
+            166667,
+            333333,
+            400000,
+            666667
+          ],
+          "expected_bytes": 307200
+        }
+      ]
+    }
+  ]
+}

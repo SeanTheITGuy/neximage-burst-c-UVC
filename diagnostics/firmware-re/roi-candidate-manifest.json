@@ -1,0 +1,875 @@
+{
+  "status": "APPLIED AND VERIFIED: cold reconnect, three resolutions and repeated stream startup passed with stock V4L2 and no sensor helper",
+  "base_sha256": "a2fe7b95f855dabe6451c1c378ea238763b089f493f97800271c5c856582319c",
+  "candidate_file": "neximage-eeprom-uvc-roi-lookup-candidate.bin",
+  "candidate_sha256": "e18911b387db7ca7975535facc8d0c5898decf94cb64e5c694611abb8895d7d6",
+  "length": 32768,
+  "replaced_code_range_inclusive": [
+    "0x18f3",
+    "0x193f"
+  ],
+  "replaced_eeprom_range_inclusive": [
+    "0x18f7",
+    "0x1943"
+  ],
+  "block_length": 77,
+  "changed_byte_count": 76,
+  "changes_from_working_backup": [
+    {
+      "eeprom_offset": "0x18f7",
+      "code_address": "0x18f3",
+      "before": "90",
+      "after": "78"
+    },
+    {
+      "eeprom_offset": "0x18f8",
+      "code_address": "0x18f4",
+      "before": "32",
+      "after": "96"
+    },
+    {
+      "eeprom_offset": "0x18f9",
+      "code_address": "0x18f5",
+      "before": "c9",
+      "after": "e6"
+    },
+    {
+      "eeprom_offset": "0x18fa",
+      "code_address": "0x18f6",
+      "before": "e4",
+      "after": "b4"
+    },
+    {
+      "eeprom_offset": "0x18fb",
+      "code_address": "0x18f7",
+      "before": "93",
+      "after": "01"
+    },
+    {
+      "eeprom_offset": "0x18fc",
+      "code_address": "0x18f8",
+      "before": "fb",
+      "after": "02"
+    },
+    {
+      "eeprom_offset": "0x18fd",
+      "code_address": "0x18f9",
+      "before": "74",
+      "after": "80"
+    },
+    {
+      "eeprom_offset": "0x18fe",
+      "code_address": "0x18fa",
+      "before": "01",
+      "after": "09"
+    },
+    {
+      "eeprom_offset": "0x18ff",
+      "code_address": "0x18fb",
+      "before": "93",
+      "after": "b4"
+    },
+    {
+      "eeprom_offset": "0x1900",
+      "code_address": "0x18fc",
+      "before": "fa",
+      "after": "02"
+    },
+    {
+      "eeprom_offset": "0x1901",
+      "code_address": "0x18fd",
+      "before": "74",
+      "after": "02"
+    },
+    {
+      "eeprom_offset": "0x1902",
+      "code_address": "0x18fe",
+      "before": "02",
+      "after": "80"
+    },
+    {
+      "eeprom_offset": "0x1903",
+      "code_address": "0x18ff",
+      "before": "93",
+      "after": "04"
+    },
+    {
+      "eeprom_offset": "0x1904",
+      "code_address": "0x1900",
+      "before": "8b",
+      "after": "b4"
+    },
+    {
+      "eeprom_offset": "0x1905",
+      "code_address": "0x1901",
+      "before": "6a",
+      "after": "04"
+    },
+    {
+      "eeprom_offset": "0x1906",
+      "code_address": "0x1902",
+      "before": "8a",
+      "after": "37"
+    },
+    {
+      "eeprom_offset": "0x1907",
+      "code_address": "0x1903",
+      "before": "6b",
+      "after": "14"
+    },
+    {
+      "eeprom_offset": "0x1908",
+      "code_address": "0x1904",
+      "before": "f5",
+      "after": "75"
+    },
+    {
+      "eeprom_offset": "0x1909",
+      "code_address": "0x1905",
+      "before": "6c",
+      "after": "f0"
+    },
+    {
+      "eeprom_offset": "0x190a",
+      "code_address": "0x1906",
+      "before": "e5",
+      "after": "03"
+    },
+    {
+      "eeprom_offset": "0x190b",
+      "code_address": "0x1907",
+      "before": "6d",
+      "after": "a4"
+    },
+    {
+      "eeprom_offset": "0x190c",
+      "code_address": "0x1908",
+      "before": "75",
+      "after": "24"
+    },
+    {
+      "eeprom_offset": "0x190d",
+      "code_address": "0x1909",
+      "before": "f0",
+      "after": "c9"
+    },
+    {
+      "eeprom_offset": "0x190e",
+      "code_address": "0x190a",
+      "before": "2a",
+      "after": "f5"
+    },
+    {
+      "eeprom_offset": "0x190f",
+      "code_address": "0x190b",
+      "before": "a4",
+      "after": "82"
+    },
+    {
+      "eeprom_offset": "0x1910",
+      "code_address": "0x190c",
+      "before": "ab",
+      "after": "e5"
+    },
+    {
+      "eeprom_offset": "0x1911",
+      "code_address": "0x190d",
+      "before": "6a",
+      "after": "f0"
+    },
+    {
+      "eeprom_offset": "0x1912",
+      "code_address": "0x190e",
+      "before": "25",
+      "after": "34"
+    },
+    {
+      "eeprom_offset": "0x1913",
+      "code_address": "0x190f",
+      "before": "6c",
+      "after": "32"
+    },
+    {
+      "eeprom_offset": "0x1914",
+      "code_address": "0x1910",
+      "before": "f9",
+      "after": "f5"
+    },
+    {
+      "eeprom_offset": "0x1915",
+      "code_address": "0x1911",
+      "before": "e5",
+      "after": "83"
+    },
+    {
+      "eeprom_offset": "0x1916",
+      "code_address": "0x1912",
+      "before": "6b",
+      "after": "a3"
+    },
+    {
+      "eeprom_offset": "0x1917",
+      "code_address": "0x1913",
+      "before": "35",
+      "after": "e4"
+    },
+    {
+      "eeprom_offset": "0x1918",
+      "code_address": "0x1914",
+      "before": "f0",
+      "after": "93"
+    },
+    {
+      "eeprom_offset": "0x191a",
+      "code_address": "0x1916",
+      "before": "90",
+      "after": "a3"
+    },
+    {
+      "eeprom_offset": "0x191b",
+      "code_address": "0x1917",
+      "before": "ff",
+      "after": "e4"
+    },
+    {
+      "eeprom_offset": "0x191c",
+      "code_address": "0x1918",
+      "before": "dc",
+      "after": "93"
+    },
+    {
+      "eeprom_offset": "0x191d",
+      "code_address": "0x1919",
+      "before": "12",
+      "after": "f5"
+    },
+    {
+      "eeprom_offset": "0x191e",
+      "code_address": "0x191a",
+      "before": "0f",
+      "after": "82"
+    },
+    {
+      "eeprom_offset": "0x191f",
+      "code_address": "0x191b",
+      "before": "f6",
+      "after": "8a"
+    },
+    {
+      "eeprom_offset": "0x1920",
+      "code_address": "0x191c",
+      "before": "fe",
+      "after": "83"
+    },
+    {
+      "eeprom_offset": "0x1921",
+      "code_address": "0x191d",
+      "before": "90",
+      "after": "74"
+    },
+    {
+      "eeprom_offset": "0x1922",
+      "code_address": "0x191e",
+      "before": "ff",
+      "after": "05"
+    },
+    {
+      "eeprom_offset": "0x1923",
+      "code_address": "0x191f",
+      "before": "db",
+      "after": "93"
+    },
+    {
+      "eeprom_offset": "0x1924",
+      "code_address": "0x1920",
+      "before": "12",
+      "after": "ff"
+    },
+    {
+      "eeprom_offset": "0x1925",
+      "code_address": "0x1921",
+      "before": "0f",
+      "after": "74"
+    },
+    {
+      "eeprom_offset": "0x1926",
+      "code_address": "0x1922",
+      "before": "f6",
+      "after": "06"
+    },
+    {
+      "eeprom_offset": "0x1927",
+      "code_address": "0x1923",
+      "before": "fd",
+      "after": "93"
+    },
+    {
+      "eeprom_offset": "0x1928",
+      "code_address": "0x1924",
+      "before": "ee",
+      "after": "78"
+    },
+    {
+      "eeprom_offset": "0x1929",
+      "code_address": "0x1925",
+      "before": "78",
+      "after": "81"
+    },
+    {
+      "eeprom_offset": "0x192a",
+      "code_address": "0x1926",
+      "before": "81",
+      "after": "f6"
+    },
+    {
+      "eeprom_offset": "0x192b",
+      "code_address": "0x1927",
+      "before": "f6",
+      "after": "08"
+    },
+    {
+      "eeprom_offset": "0x192c",
+      "code_address": "0x1928",
+      "before": "ed",
+      "after": "a6"
+    },
+    {
+      "eeprom_offset": "0x192d",
+      "code_address": "0x1929",
+      "before": "08",
+      "after": "07"
+    },
+    {
+      "eeprom_offset": "0x192e",
+      "code_address": "0x192a",
+      "before": "f6",
+      "after": "74"
+    },
+    {
+      "eeprom_offset": "0x192f",
+      "code_address": "0x192b",
+      "before": "90",
+      "after": "07"
+    },
+    {
+      "eeprom_offset": "0x1930",
+      "code_address": "0x192c",
+      "before": "ff",
+      "after": "93"
+    },
+    {
+      "eeprom_offset": "0x1931",
+      "code_address": "0x192d",
+      "before": "de",
+      "after": "ff"
+    },
+    {
+      "eeprom_offset": "0x1932",
+      "code_address": "0x192e",
+      "before": "12",
+      "after": "74"
+    },
+    {
+      "eeprom_offset": "0x1933",
+      "code_address": "0x192f",
+      "before": "0f",
+      "after": "08"
+    },
+    {
+      "eeprom_offset": "0x1934",
+      "code_address": "0x1930",
+      "before": "f6",
+      "after": "93"
+    },
+    {
+      "eeprom_offset": "0x1935",
+      "code_address": "0x1931",
+      "before": "fe",
+      "after": "78"
+    },
+    {
+      "eeprom_offset": "0x1936",
+      "code_address": "0x1932",
+      "before": "90",
+      "after": "9d"
+    },
+    {
+      "eeprom_offset": "0x1937",
+      "code_address": "0x1933",
+      "before": "ff",
+      "after": "f6"
+    },
+    {
+      "eeprom_offset": "0x1938",
+      "code_address": "0x1934",
+      "before": "dd",
+      "after": "08"
+    },
+    {
+      "eeprom_offset": "0x1939",
+      "code_address": "0x1935",
+      "before": "12",
+      "after": "a6"
+    },
+    {
+      "eeprom_offset": "0x193a",
+      "code_address": "0x1936",
+      "before": "0f",
+      "after": "07"
+    },
+    {
+      "eeprom_offset": "0x193b",
+      "code_address": "0x1937",
+      "before": "f6",
+      "after": "02"
+    },
+    {
+      "eeprom_offset": "0x193c",
+      "code_address": "0x1938",
+      "before": "fd",
+      "after": "19"
+    },
+    {
+      "eeprom_offset": "0x193d",
+      "code_address": "0x1939",
+      "before": "ee",
+      "after": "40"
+    },
+    {
+      "eeprom_offset": "0x193e",
+      "code_address": "0x193a",
+      "before": "78",
+      "after": "c2"
+    },
+    {
+      "eeprom_offset": "0x193f",
+      "code_address": "0x193b",
+      "before": "9d",
+      "after": "c6"
+    },
+    {
+      "eeprom_offset": "0x1940",
+      "code_address": "0x193c",
+      "before": "f6",
+      "after": "22"
+    },
+    {
+      "eeprom_offset": "0x1941",
+      "code_address": "0x193d",
+      "before": "ed",
+      "after": "00"
+    },
+    {
+      "eeprom_offset": "0x1942",
+      "code_address": "0x193e",
+      "before": "08",
+      "after": "00"
+    },
+    {
+      "eeprom_offset": "0x1943",
+      "code_address": "0x193f",
+      "before": "f6",
+      "after": "00"
+    }
+  ],
+  "all_changes_from_original": [
+    {
+      "eeprom_offset": "0x18f7",
+      "before": "90",
+      "after": "78"
+    },
+    {
+      "eeprom_offset": "0x18f8",
+      "before": "32",
+      "after": "96"
+    },
+    {
+      "eeprom_offset": "0x18f9",
+      "before": "c9",
+      "after": "e6"
+    },
+    {
+      "eeprom_offset": "0x18fa",
+      "before": "e4",
+      "after": "b4"
+    },
+    {
+      "eeprom_offset": "0x18fb",
+      "before": "93",
+      "after": "01"
+    },
+    {
+      "eeprom_offset": "0x18fc",
+      "before": "fb",
+      "after": "02"
+    },
+    {
+      "eeprom_offset": "0x18fd",
+      "before": "74",
+      "after": "80"
+    },
+    {
+      "eeprom_offset": "0x18fe",
+      "before": "01",
+      "after": "09"
+    },
+    {
+      "eeprom_offset": "0x18ff",
+      "before": "93",
+      "after": "b4"
+    },
+    {
+      "eeprom_offset": "0x1900",
+      "before": "fa",
+      "after": "02"
+    },
+    {
+      "eeprom_offset": "0x1901",
+      "before": "74",
+      "after": "02"
+    },
+    {
+      "eeprom_offset": "0x1902",
+      "before": "02",
+      "after": "80"
+    },
+    {
+      "eeprom_offset": "0x1903",
+      "before": "93",
+      "after": "04"
+    },
+    {
+      "eeprom_offset": "0x1904",
+      "before": "8b",
+      "after": "b4"
+    },
+    {
+      "eeprom_offset": "0x1905",
+      "before": "6a",
+      "after": "04"
+    },
+    {
+      "eeprom_offset": "0x1906",
+      "before": "8a",
+      "after": "37"
+    },
+    {
+      "eeprom_offset": "0x1907",
+      "before": "6b",
+      "after": "14"
+    },
+    {
+      "eeprom_offset": "0x1908",
+      "before": "f5",
+      "after": "75"
+    },
+    {
+      "eeprom_offset": "0x1909",
+      "before": "6c",
+      "after": "f0"
+    },
+    {
+      "eeprom_offset": "0x190a",
+      "before": "e5",
+      "after": "03"
+    },
+    {
+      "eeprom_offset": "0x190b",
+      "before": "6d",
+      "after": "a4"
+    },
+    {
+      "eeprom_offset": "0x190c",
+      "before": "75",
+      "after": "24"
+    },
+    {
+      "eeprom_offset": "0x190d",
+      "before": "f0",
+      "after": "c9"
+    },
+    {
+      "eeprom_offset": "0x190e",
+      "before": "2a",
+      "after": "f5"
+    },
+    {
+      "eeprom_offset": "0x190f",
+      "before": "a4",
+      "after": "82"
+    },
+    {
+      "eeprom_offset": "0x1910",
+      "before": "ab",
+      "after": "e5"
+    },
+    {
+      "eeprom_offset": "0x1911",
+      "before": "6a",
+      "after": "f0"
+    },
+    {
+      "eeprom_offset": "0x1912",
+      "before": "25",
+      "after": "34"
+    },
+    {
+      "eeprom_offset": "0x1913",
+      "before": "6c",
+      "after": "32"
+    },
+    {
+      "eeprom_offset": "0x1914",
+      "before": "f9",
+      "after": "f5"
+    },
+    {
+      "eeprom_offset": "0x1915",
+      "before": "e5",
+      "after": "83"
+    },
+    {
+      "eeprom_offset": "0x1916",
+      "before": "6b",
+      "after": "a3"
+    },
+    {
+      "eeprom_offset": "0x1917",
+      "before": "35",
+      "after": "e4"
+    },
+    {
+      "eeprom_offset": "0x1918",
+      "before": "f0",
+      "after": "93"
+    },
+    {
+      "eeprom_offset": "0x191a",
+      "before": "90",
+      "after": "a3"
+    },
+    {
+      "eeprom_offset": "0x191b",
+      "before": "ff",
+      "after": "e4"
+    },
+    {
+      "eeprom_offset": "0x191c",
+      "before": "dc",
+      "after": "93"
+    },
+    {
+      "eeprom_offset": "0x191d",
+      "before": "12",
+      "after": "f5"
+    },
+    {
+      "eeprom_offset": "0x191e",
+      "before": "0f",
+      "after": "82"
+    },
+    {
+      "eeprom_offset": "0x191f",
+      "before": "f6",
+      "after": "8a"
+    },
+    {
+      "eeprom_offset": "0x1920",
+      "before": "fe",
+      "after": "83"
+    },
+    {
+      "eeprom_offset": "0x1921",
+      "before": "90",
+      "after": "74"
+    },
+    {
+      "eeprom_offset": "0x1922",
+      "before": "ff",
+      "after": "05"
+    },
+    {
+      "eeprom_offset": "0x1923",
+      "before": "db",
+      "after": "93"
+    },
+    {
+      "eeprom_offset": "0x1924",
+      "before": "12",
+      "after": "ff"
+    },
+    {
+      "eeprom_offset": "0x1925",
+      "before": "0f",
+      "after": "74"
+    },
+    {
+      "eeprom_offset": "0x1926",
+      "before": "f6",
+      "after": "06"
+    },
+    {
+      "eeprom_offset": "0x1927",
+      "before": "fd",
+      "after": "93"
+    },
+    {
+      "eeprom_offset": "0x1928",
+      "before": "ee",
+      "after": "78"
+    },
+    {
+      "eeprom_offset": "0x1929",
+      "before": "78",
+      "after": "81"
+    },
+    {
+      "eeprom_offset": "0x192a",
+      "before": "81",
+      "after": "f6"
+    },
+    {
+      "eeprom_offset": "0x192b",
+      "before": "f6",
+      "after": "08"
+    },
+    {
+      "eeprom_offset": "0x192c",
+      "before": "ed",
+      "after": "a6"
+    },
+    {
+      "eeprom_offset": "0x192d",
+      "before": "08",
+      "after": "07"
+    },
+    {
+      "eeprom_offset": "0x192e",
+      "before": "f6",
+      "after": "74"
+    },
+    {
+      "eeprom_offset": "0x192f",
+      "before": "90",
+      "after": "07"
+    },
+    {
+      "eeprom_offset": "0x1930",
+      "before": "ff",
+      "after": "93"
+    },
+    {
+      "eeprom_offset": "0x1931",
+      "before": "de",
+      "after": "ff"
+    },
+    {
+      "eeprom_offset": "0x1932",
+      "before": "12",
+      "after": "74"
+    },
+    {
+      "eeprom_offset": "0x1933",
+      "before": "0f",
+      "after": "08"
+    },
+    {
+      "eeprom_offset": "0x1934",
+      "before": "f6",
+      "after": "93"
+    },
+    {
+      "eeprom_offset": "0x1935",
+      "before": "fe",
+      "after": "78"
+    },
+    {
+      "eeprom_offset": "0x1936",
+      "before": "90",
+      "after": "9d"
+    },
+    {
+      "eeprom_offset": "0x1937",
+      "before": "ff",
+      "after": "f6"
+    },
+    {
+      "eeprom_offset": "0x1938",
+      "before": "dd",
+      "after": "08"
+    },
+    {
+      "eeprom_offset": "0x1939",
+      "before": "12",
+      "after": "a6"
+    },
+    {
+      "eeprom_offset": "0x193a",
+      "before": "0f",
+      "after": "07"
+    },
+    {
+      "eeprom_offset": "0x193b",
+      "before": "f6",
+      "after": "02"
+    },
+    {
+      "eeprom_offset": "0x193c",
+      "before": "fd",
+      "after": "19"
+    },
+    {
+      "eeprom_offset": "0x193d",
+      "before": "ee",
+      "after": "40"
+    },
+    {
+      "eeprom_offset": "0x193e",
+      "before": "78",
+      "after": "c2"
+    },
+    {
+      "eeprom_offset": "0x193f",
+      "before": "9d",
+      "after": "c6"
+    },
+    {
+      "eeprom_offset": "0x1940",
+      "before": "f6",
+      "after": "22"
+    },
+    {
+      "eeprom_offset": "0x1941",
+      "before": "ed",
+      "after": "00"
+    },
+    {
+      "eeprom_offset": "0x1942",
+      "before": "08",
+      "after": "00"
+    },
+    {
+      "eeprom_offset": "0x1943",
+      "before": "f6",
+      "after": "00"
+    },
+    {
+      "eeprom_offset": "0x1f0c",
+      "before": "01",
+      "after": "02"
+    },
+    {
+      "eeprom_offset": "0x1f34",
+      "before": "33",
+      "after": "4f"
+    }
+  ],
+  "labels": {
+    "try2": "0x18fb",
+    "try4": "0x1900",
+    "lookup": "0x1904",
+    "reject": "0x193a"
+  },
+  "rollback": "Restore the replaced 77-byte EEPROM block from the verified working a2fe... image; verify all 32768 bytes match base_sha256 before power cycling. Software recovery depends on successful enumeration; external EEPROM recovery is untested.",
+  "hardware_validation": "validation-cold1/results.json"
+}

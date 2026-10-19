@@ -1,0 +1,133 @@
+{
+  "status": "PASS \u2014 offline model, NOT hardware validation",
+  "arithmetic_cases": 80,
+  "unsupported_frame_ids_rejected": 253,
+  "advertised_mode_cases": [
+    {
+      "frame": 1,
+      "requested_interval": 333333,
+      "width": 1280,
+      "height": 960,
+      "negotiated_interval": 1333333,
+      "pixel_clock": 12251250,
+      "steps": 3592,
+      "uvc_apply_pending": 1
+    },
+    {
+      "frame": 1,
+      "requested_interval": 400000,
+      "width": 1280,
+      "height": 960,
+      "negotiated_interval": 1333333,
+      "pixel_clock": 12251250,
+      "steps": 3592,
+      "uvc_apply_pending": 1
+    },
+    {
+      "frame": 1,
+      "requested_interval": 666667,
+      "width": 1280,
+      "height": 960,
+      "negotiated_interval": 1333333,
+      "pixel_clock": 12251250,
+      "steps": 3592,
+      "uvc_apply_pending": 1
+    },
+    {
+      "frame": 1,
+      "requested_interval": 1000000,
+      "width": 1280,
+      "height": 960,
+      "negotiated_interval": 1333333,
+      "pixel_clock": 12251250,
+      "steps": 3592,
+      "uvc_apply_pending": 1
+    },
+    {
+      "frame": 2,
+      "requested_interval": 166667,
+      "width": 720,
+      "height": 480,
+      "negotiated_interval": 666667,
+      "pixel_clock": 12538350,
+      "steps": 3605,
+      "uvc_apply_pending": 1
+    },
+    {
+      "frame": 2,
+      "requested_interval": 333333,
+      "width": 720,
+      "height": 480,
+      "negotiated_interval": 666667,
+      "pixel_clock": 12538350,
+      "steps": 3605,
+      "uvc_apply_pending": 1
+    },
+    {
+      "frame": 2,
+      "requested_interval": 400000,
+      "width": 720,
+      "height": 480,
+      "negotiated_interval": 666667,
+      "pixel_clock": 12538350,
+      "steps": 3605,
+      "uvc_apply_pending": 1
+    },
+    {
+      "frame": 2,
+      "requested_interval": 666667,
+      "width": 720,
+      "height": 480,
+      "negotiated_interval": 666667,
+      "pixel_clock": 12538350,
+      "steps": 2553,
+      "uvc_apply_pending": 1
+    },
+    {
+      "frame": 4,
+      "requested_interval": 166667,
+      "width": 640,
+      "height": 480,
+      "negotiated_interval": 272473,
+      "pixel_clock": 30883050,
+      "steps": 3633,
+      "uvc_apply_pending": 1
+    },
+    {
+      "frame": 4,
+      "requested_interval": 333333,
+      "width": 640,
+      "height": 480,
+      "negotiated_interval": 333333,
+      "pixel_clock": 25245000,
+      "steps": 2759,
+      "uvc_apply_pending": 1
+    },
+    {
+      "frame": 4,
+      "requested_interval": 400000,
+      "width": 640,
+      "height": 480,
+      "negotiated_interval": 272473,
+      "pixel_clock": 30883050,
+      "steps": 3491,
+      "uvc_apply_pending": 1
+    },
+    {
+      "frame": 4,
+      "requested_interval": 666667,
+      "width": 640,
+      "height": 480,
+      "negotiated_interval": 666667,
+      "pixel_clock": 12538350,
+      "steps": 3263,
+      "uvc_apply_pending": 1
+    }
+  ],
+  "known_original_clock_reproduced": 7227990,
+  "known_original_image_byte_count_explained": 107712,
+  "roi_register_sequences_checked": 3,
+  "get_cur_roundtrips_checked": 3,
+  "deferred_apply_paths_checked": 3,
+  "peripheral_limitations": "EP0 FIFO and ready flags modeled; actual EP0 routines executed. Sensor I2C transaction stubbed. PLL programming, sensor timing, USB streaming and concurrent interrupts are NOT emulated."
+}

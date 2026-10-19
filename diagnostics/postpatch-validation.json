@@ -1,0 +1,16 @@
+{
+  "720x480": {
+    "expected_bytes": 345600,
+    "consecutive_good_buffers": 17,
+    "first_good_sequence": 7,
+    "last_good_sequence": 23,
+    "v4l2_ctl_output_bytes": 3456000,
+    "v4l2_ctl_good_frames": 10,
+    "expected_frame_bytes": 345600
+  },
+  "1280x960": {
+    "v4l2_ctl_good_frames": 10,
+    "v4l2_ctl_output_bytes": 12288000,
+    "expected_frame_bytes": 1228800
+  }
+}

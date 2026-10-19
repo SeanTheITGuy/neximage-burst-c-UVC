@@ -1,0 +1,27 @@
+format 720x480 GREY stride=720 size=345600
+STREAMON success
+Volatile sensor ROI/clock verified while uvcvideo remains attached.
+seq=0 bytes=107712 flags=0x12041 error=1 time=452969.583692
+seq=1 bytes=107712 flags=0x12041 error=1 time=452969.650805
+seq=2 bytes=107712 flags=0x12041 error=1 time=452969.717924
+seq=3 bytes=107712 flags=0x12041 error=1 time=452969.785044
+seq=4 bytes=107712 flags=0x12041 error=1 time=452969.852165
+seq=5 bytes=107712 flags=0x12041 error=1 time=452969.919284
+seq=6 bytes=345600 flags=0x12041 error=1 time=452969.986405
+seq=7 bytes=345600 flags=0x12001 error=0 time=452970.674272
+seq=8 bytes=345600 flags=0x12001 error=0 time=452970.744388
+seq=9 bytes=345600 flags=0x12001 error=0 time=452970.814505
+seq=10 bytes=345600 flags=0x12001 error=0 time=452970.884623
+seq=11 bytes=345600 flags=0x12001 error=0 time=452970.954739
+seq=12 bytes=345600 flags=0x12001 error=0 time=452971.024856
+seq=13 bytes=345600 flags=0x12001 error=0 time=452971.094972
+seq=14 bytes=345600 flags=0x12001 error=0 time=452971.165089
+seq=15 bytes=345600 flags=0x12001 error=0 time=452971.235209
+seq=16 bytes=345600 flags=0x12001 error=0 time=452971.305323
+seq=17 bytes=345600 flags=0x12001 error=0 time=452971.375442
+seq=18 bytes=345600 flags=0x12001 error=0 time=452971.445557
+seq=19 bytes=345600 flags=0x12001 error=0 time=452971.515675
+seq=20 bytes=345600 flags=0x12001 error=0 time=452971.585791
+seq=21 bytes=345600 flags=0x12001 error=0 time=452971.655909
+seq=22 bytes=345600 flags=0x12001 error=0 time=452971.726025
+seq=23 bytes=345600 flags=0x12001 error=0 time=452971.796142
