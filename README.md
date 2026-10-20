@@ -1,5 +1,14 @@
 # Celestron NexImage Burst C — Linux UVC firmware repair
 
+**20 October 2026 update:** the camera now advertises its usable stream as
+**GRBG (8-bit Bayer)** following an additional eight-byte descriptor GUID swap.
+All four post-reconnect capture tests passed (40 complete frames), and the owner
+confirmed correct colours after setting the astronomy application's Bayer Pattern
+to **GRBG**. See the [GRBG repair record](diagnostics/firmware-re/GRBG-PROPOSAL.md).
+The current verified image is [neximage-eeprom-grbg-candidate.bin](neximage-eeprom-grbg-candidate.bin),
+SHA-256 `2633c2d87526c1372bf704fd9de8b40a44c0b53160ebd0dd65a36bb91887d2d2`.
+The three-fix history and older image below describe the 19 October baseline.
+
 A working, camera-side repair for the **Celestron NexImage Burst C** USB astronomy camera (The Imaging Source hardware). This project documents how its built-in UVC mode was repaired so the camera can capture through the **stock Linux `uvcvideo` driver**, without an out-of-tree driver, kernel patch, or per-session sensor-initialization helper.
 
 **Status: working on one tested camera, not a universal firmware release.** The patched EEPROM image was read back from that camera after programming and validated with real image captures. Compatibility with other hardware revisions or firmware versions has **not** been established.
@@ -52,7 +61,7 @@ Capture 30 frames at 720 × 480 (substitute the correct `/dev/video*` node for y
 
 ```bash
 v4l2-ctl -d /dev/video0 \
-  --set-fmt-video=width=720,height=480,pixelformat=GREY \
+  --set-fmt-video=width=720,height=480,pixelformat=GRBG \
   --set-parm=15 \
   --stream-mmap=4 --stream-count=30 \
   --stream-to=capture.raw
@@ -62,13 +71,13 @@ For native 1280 × 960:
 
 ```bash
 v4l2-ctl -d /dev/video0 \
-  --set-fmt-video=width=1280,height=960,pixelformat=GREY \
+  --set-fmt-video=width=1280,height=960,pixelformat=GRBG \
   --set-parm=10 \
   --stream-mmap=4 --stream-count=30 \
   --stream-to=capture-native.raw
 ```
 
-**Important:** select `GREY` in the V4L2 API, but the image bytes are **raw Bayer mosaic data**, not ordinary grayscale or RGB. Debayer them for colour output. The native-resolution example negotiates about **7.5 fps**, not 10 fps.
+**Important:** select `GRBG` in the V4L2 API and set the application's Bayer Pattern to **GRBG** for colour output. The image bytes are raw Bayer mosaic data. The native-resolution example negotiates about **7.5 fps**, not 10 fps. The older 19 October image still requires `GREY` capture.
 
 ## Hardware and image identification
 
@@ -85,7 +94,7 @@ The repair was developed and verified on this specific device:
 | Interface | USB 2.0 High Speed (480 Mbps) |
 | Tested Linux host | Ubuntu, kernel `7.0.0-38-generic` |
 
-**SHA-256 of the final verified, working EEPROM image:**
+**SHA-256 of the 19 October verified working EEPROM image (before the GRBG update):**
 
 ```text
 e18911b387db7ca7975535facc8d0c5898decf94cb64e5c694611abb8895d7d6
@@ -109,7 +118,7 @@ The full report also references diagnostic scripts, logs, manifests, and interme
 ## Known limitations
 
 - The firmware is **not fully UVC-specification-compliant**. Some format counts, class-specific descriptor lengths and bitrate fields remain inconsistent.
-- The unused GRBG format entry has no frame descriptors; working Bayer capture is exposed via `GREY`.
+- The unused format entry still has no frame descriptors. In the current image it is labelled GREY; all usable sizes are exposed through GRBG.
 - Reported frame-rate options are imperfect. Not every advertised mode or rate was tested.
 - The USB status interrupt endpoint can still report `-75` (`EOVERFLOW`) warnings. The image stream worked despite these; the notification issue was not fully resolved.
 - Long-duration stability, application compatibility beyond the demonstrated V4L2 tests, and other cameras or firmware revisions are unverified.

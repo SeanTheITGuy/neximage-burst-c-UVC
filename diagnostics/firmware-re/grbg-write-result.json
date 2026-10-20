@@ -1,0 +1,28 @@
+{
+  "status": "APPLIED AND VERIFIED TWICE; awaiting cold reconnect and hardware capture tests",
+  "serial": "28414934",
+  "base_sha256": "e18911b387db7ca7975535facc8d0c5898decf94cb64e5c694611abb8895d7d6",
+  "candidate_sha256": "2633c2d87526c1372bf704fd9de8b40a44c0b53160ebd0dd65a36bb91887d2d2",
+  "transactions": [
+    {
+      "address": "0x1ef2",
+      "length": 4,
+      "status": "SENT",
+      "out_count": 6,
+      "completion_length": 1
+    },
+    {
+      "address": "0x1f0e",
+      "length": 4,
+      "status": "SENT",
+      "out_count": 6,
+      "completion_length": 0
+    }
+  ],
+  "full_read_verifications": 2,
+  "changed_byte_count": 8,
+  "existing_descriptor_corrections": {
+    "0x1f0c": "02",
+    "0x1f34": "4f"
+  }
+}

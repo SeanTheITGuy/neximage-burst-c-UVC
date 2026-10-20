@@ -1,0 +1,57 @@
+VIDIOC_QUERYCAP: ok
+VIDIOC_G_FMT: ok
+VIDIOC_S_FMT: ok
+Format Video Capture:
+	Width/Height      : 1280/960
+	Pixel Format      : 'GRBG' (8-bit Bayer GRGR/BGBG)
+	Field             : None
+	Bytes per Line    : 1280
+	Size Image        : 1228800
+	Colorspace        : sRGB
+	Transfer Function : Default (maps to sRGB)
+	YCbCr/HSV Encoding: Default (maps to ITU-R 601)
+	Quantization      : Default (maps to Full Range)
+	Flags             : 
+VIDIOC_S_PARM: ok
+Frame rate set to 7.500 fps
+VIDIOC_G_FMT: ok
+Format Video Capture:
+	Width/Height      : 1280/960
+	Pixel Format      : 'GRBG' (8-bit Bayer GRGR/BGBG)
+	Field             : None
+	Bytes per Line    : 1280
+	Size Image        : 1228800
+	Colorspace        : sRGB
+	Transfer Function : Default (maps to sRGB)
+	YCbCr/HSV Encoding: Default (maps to ITU-R 601)
+	Quantization      : Default (maps to Full Range)
+	Flags             : 
+VIDIOC_G_PARM: ok
+Streaming Parameters Video Capture:
+	Capabilities     : timeperframe
+	Frames per second: 7.500 (15/2)
+	Read buffers     : 0
+		VIDIOC_REQBUFS returned 0 (Success)
+		VIDIOC_CREATE_BUFS returned 0 (Success)
+		VIDIOC_QUERYBUF returned 0 (Success)
+		VIDIOC_QUERYBUF returned 0 (Success)
+		VIDIOC_QUERYBUF returned 0 (Success)
+		VIDIOC_QUERYBUF returned 0 (Success)
+		VIDIOC_G_FMT returned 0 (Success)
+		VIDIOC_QBUF returned 0 (Success)
+		VIDIOC_QBUF returned 0 (Success)
+		VIDIOC_QBUF returned 0 (Success)
+		VIDIOC_QBUF returned 0 (Success)
+		VIDIOC_STREAMON returned 0 (Success)
+cap dqbuf: 0 seq:      0 bytesused: 1228800 ts: 11074.814626 field: None (error, ts-monotonic, ts-src-soe)
+cap dqbuf: 1 seq:      1 bytesused: 1228800 ts: 11075.636143 delta: 821.517 ms field: None (ts-monotonic, ts-src-soe)
+cap dqbuf: 2 seq:      2 bytesused: 1228800 ts: 11075.769475 delta: 133.332 ms field: None (ts-monotonic, ts-src-soe)
+cap dqbuf: 3 seq:      3 bytesused: 1228800 ts: 11075.902809 delta: 133.334 ms field: None (ts-monotonic, ts-src-soe)
+cap dqbuf: 0 seq:      4 bytesused: 1228800 ts: 11076.036151 delta: 133.342 ms field: None (ts-monotonic, ts-src-soe)
+cap dqbuf: 1 seq:      5 bytesused: 1228800 ts: 11076.169473 delta: 133.322 ms fps: 7.50 field: None (ts-monotonic, ts-src-soe)
+cap dqbuf: 2 seq:      6 bytesused: 1228800 ts: 11076.302801 delta: 133.328 ms fps: 7.50 field: None (ts-monotonic, ts-src-soe)
+cap dqbuf: 3 seq:      7 bytesused: 1228800 ts: 11076.436131 delta: 133.330 ms fps: 7.50 field: None (ts-monotonic, ts-src-soe)
+cap dqbuf: 0 seq:      8 bytesused: 1228800 ts: 11076.569462 delta: 133.331 ms fps: 7.50 field: None (ts-monotonic, ts-src-soe)
+cap dqbuf: 1 seq:      9 bytesused: 1228800 ts: 11076.702793 delta: 133.331 ms fps: 7.50 field: None (ts-monotonic, ts-src-soe)
+cap dqbuf: 2 seq:     10 bytesused: 1228800 ts: 11076.836125 delta: 133.332 ms fps: 7.50 field: None (ts-monotonic, ts-src-soe)
+
