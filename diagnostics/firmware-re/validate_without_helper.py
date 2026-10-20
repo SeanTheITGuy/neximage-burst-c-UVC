@@ -10,6 +10,8 @@ def main():
     ap=argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--count',type=int,default=10)
     ap.add_argument('--label',default='cold1')
+    ap.add_argument('--format', choices=['GREY', 'GRBG'], default='GREY')
+    ap.add_argument('--device', default='/dev/video0')
     args=ap.parse_args()
     if not 3<=args.count<=100:ap.error('Count must be between 3 and 100')
     if not args.label.replace('-','').isalnum():ap.error('Use an alphanumeric label')
@@ -21,7 +23,7 @@ def main():
     for num,(width,height,fps) in enumerate([(720,480,15),(1280,960,10),(640,480,15),(720,480,15)]):
         tag=f'{num}-{width}x{height}'
         output=folder/f'{tag}.raw'
-        cmd=['stdbuf','-oL','-eL','v4l2-ctl','-d','/dev/video0',f'--set-fmt-video=width={width},height={height},pixelformat=GREY',f'--set-parm={fps}','--get-fmt-video','--get-parm','--stream-mmap=4',f'--stream-count={args.count}',f'--stream-to={output}','--verbose']
+        cmd=['stdbuf','-oL','-eL','v4l2-ctl','-d',args.device,f'--set-fmt-video=width={width},height={height},pixelformat={args.format}',f'--set-parm={fps}','--get-fmt-video','--get-parm','--stream-mmap=4',f'--stream-count={args.count}',f'--stream-to={output}','--verbose']
         record={'width':width,'height':height,'requested_fps':fps,'command':cmd};summary['tests'].append(record);save()
         print(f'Testing {tag}, standard V4L2 only...',flush=True)
         start=time.monotonic()
@@ -40,7 +42,9 @@ def main():
         timestamps=[float(re.search(r'ts:\s*([0-9.]+)',line)[1]) for line in good]
         size=output.stat().st_size if output.exists() else 0
         expected=width*height*args.count
-        passed=(result.returncode==0 and len(good)==args.count and size==expected and all(n==width*height for n in sizes))
+        negotiated = re.search(r"Pixel Format\s*:\s*'([^']+)'", log)
+        record['negotiated_format'] = negotiated[1] if negotiated else None
+        passed=(result.returncode==0 and record['negotiated_format']==args.format and len(good)==args.count and size==expected and all(n==width*height for n in sizes))
         record.update({'status':'PASS' if passed else 'FAIL','good_frames':len(good),'error_frames':len(rows)-len(good),'file_bytes':size,'expected_file_bytes':expected,'elapsed_seconds':time.monotonic()-start,'measured_fps':(len(timestamps)-1)/(timestamps[-1]-timestamps[0]) if len(timestamps)>1 else None})
         save();print(json.dumps({k:v for k,v in record.items() if k!='command'}),flush=True)
         if not passed:

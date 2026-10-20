@@ -1,5 +1,13 @@
 # Celestron NexImage Burst C: repairing UVC operation under modern Linux
 
+**20 October update:** an additional eight-byte GUID swap now exposes all usable
+frames as GRBG. Four post-reconnect captures passed (40 complete frames), and the
+owner confirmed correct colours with the application's **Bayer Pattern = GRBG**.
+Use `pixelformat=GRBG` with the updated firmware. See the
+[GRBG repair record](diagnostics/firmware-re/GRBG-PROPOSAL.md) for exact bytes,
+image hash, programming verification, and capture results. The report below
+preserves the 19 October repair history and its GREY-labelled baseline image.
+
 **Investigation and repair record — 19 October 2026**  
 **Camera serial:** 28414934  
 **Repository:** TheImagingSource/tcam-firmware-update

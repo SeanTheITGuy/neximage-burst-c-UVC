@@ -1,0 +1,183 @@
+{
+  "status": "OFFLINE ONLY; NOT FLASHED; hardware and application behavior unverified",
+  "base_sha256": "e18911b387db7ca7975535facc8d0c5898decf94cb64e5c694611abb8895d7d6",
+  "candidate_file": "neximage-eeprom-grbg-candidate.bin",
+  "candidate_sha256": "2633c2d87526c1372bf704fd9de8b40a44c0b53160ebd0dd65a36bb91887d2d2",
+  "changes": [
+    {
+      "offset": "0x1ef2",
+      "before": "59",
+      "after": "47"
+    },
+    {
+      "offset": "0x1ef3",
+      "before": "38",
+      "after": "52"
+    },
+    {
+      "offset": "0x1ef4",
+      "before": "30",
+      "after": "42"
+    },
+    {
+      "offset": "0x1ef5",
+      "before": "30",
+      "after": "47"
+    },
+    {
+      "offset": "0x1f0e",
+      "before": "47",
+      "after": "59"
+    },
+    {
+      "offset": "0x1f0f",
+      "before": "52",
+      "after": "38"
+    },
+    {
+      "offset": "0x1f10",
+      "before": "42",
+      "after": "30"
+    },
+    {
+      "offset": "0x1f11",
+      "before": "47",
+      "after": "30"
+    }
+  ],
+  "offline_control_path_comparisons": [
+    {
+      "frame": 1,
+      "requested_interval": 333333,
+      "width": 1280,
+      "height": 960,
+      "negotiated_interval": 1333333,
+      "pixel_clock": 12251250,
+      "steps": 3592,
+      "uvc_apply_pending": 1
+    },
+    {
+      "frame": 1,
+      "requested_interval": 400000,
+      "width": 1280,
+      "height": 960,
+      "negotiated_interval": 1333333,
+      "pixel_clock": 12251250,
+      "steps": 3592,
+      "uvc_apply_pending": 1
+    },
+    {
+      "frame": 1,
+      "requested_interval": 666667,
+      "width": 1280,
+      "height": 960,
+      "negotiated_interval": 1333333,
+      "pixel_clock": 12251250,
+      "steps": 3592,
+      "uvc_apply_pending": 1
+    },
+    {
+      "frame": 1,
+      "requested_interval": 1000000,
+      "width": 1280,
+      "height": 960,
+      "negotiated_interval": 1333333,
+      "pixel_clock": 12251250,
+      "steps": 3592,
+      "uvc_apply_pending": 1
+    },
+    {
+      "frame": 2,
+      "requested_interval": 166667,
+      "width": 720,
+      "height": 480,
+      "negotiated_interval": 666667,
+      "pixel_clock": 12538350,
+      "steps": 3605,
+      "uvc_apply_pending": 1
+    },
+    {
+      "frame": 2,
+      "requested_interval": 333333,
+      "width": 720,
+      "height": 480,
+      "negotiated_interval": 666667,
+      "pixel_clock": 12538350,
+      "steps": 3605,
+      "uvc_apply_pending": 1
+    },
+    {
+      "frame": 2,
+      "requested_interval": 400000,
+      "width": 720,
+      "height": 480,
+      "negotiated_interval": 666667,
+      "pixel_clock": 12538350,
+      "steps": 3605,
+      "uvc_apply_pending": 1
+    },
+    {
+      "frame": 2,
+      "requested_interval": 666667,
+      "width": 720,
+      "height": 480,
+      "negotiated_interval": 666667,
+      "pixel_clock": 12538350,
+      "steps": 2553,
+      "uvc_apply_pending": 1
+    },
+    {
+      "frame": 4,
+      "requested_interval": 166667,
+      "width": 640,
+      "height": 480,
+      "negotiated_interval": 272473,
+      "pixel_clock": 30883050,
+      "steps": 3633,
+      "uvc_apply_pending": 1
+    },
+    {
+      "frame": 4,
+      "requested_interval": 333333,
+      "width": 640,
+      "height": 480,
+      "negotiated_interval": 333333,
+      "pixel_clock": 25245000,
+      "steps": 2759,
+      "uvc_apply_pending": 1
+    },
+    {
+      "frame": 4,
+      "requested_interval": 400000,
+      "width": 640,
+      "height": 480,
+      "negotiated_interval": 272473,
+      "pixel_clock": 30883050,
+      "steps": 3491,
+      "uvc_apply_pending": 1
+    },
+    {
+      "frame": 4,
+      "requested_interval": 666667,
+      "width": 640,
+      "height": 480,
+      "negotiated_interval": 666667,
+      "pixel_clock": 12538350,
+      "steps": 3263,
+      "uvc_apply_pending": 1
+    }
+  ],
+  "proposed_writes": [
+    {
+      "offset": "0x1ef2",
+      "before": "59383030",
+      "after": "47524247"
+    },
+    {
+      "offset": "0x1f0e",
+      "before": "47524247",
+      "after": "59383030"
+    }
+  ],
+  "rollback": "Restore only the two four-byte ranges from the verified base; full readback must match base_sha256."
+}
